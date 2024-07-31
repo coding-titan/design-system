@@ -1,0 +1,18 @@
+:root {
+    --site-background-color: #FFF7E8;
+    --background-color: #FDF0D5;
+    --bright-contrast: #C1121F;
+    --dark-contrast: #780000;
+    --secondary-background: #003049;
+    --tertiary-background: #669BBC;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--site-background-color);
+}
+
