@@ -14,27 +14,69 @@
 
 body {
     background-color: var(--site-background-color);
-    color: black;
+    color: var(--secondary-background);
     font-family: Lato, Arial, sans-serif;
 }
 
 nav {
     text-align: center;
     padding: 10px;
+    background-color: var(--background-color);
+    border-bottom: 10px solid var(--secondary-background);
 }
 
 h1 {
     font-size: 68px;
+    margin: 28px;
 }
 
 h2 {
     font-size: 42px;
+    margin: 20px;
+    padding: 20px;
 }
 
 h3 {
     font-size: 26px;
+    margin: 6px;
 }
 
 p {
     font-size: 16px;
+    margin: 6px;
+}
+
+#colors {
+    text-align: center;
+}
+
+.color {
+    padding: 80px;
+    color: var(--background-color);
+}
+
+#background {
+    background-color: var(--background-color);
+    color: var(--bright-contrast)
+}
+
+#bright-contrast {
+    background-color: var(--bright-contrast);
+}
+
+#dark-contrast {
+    background-color: var(--dark-contrast);
+}
+
+#secondary-background {
+    background-color: var(--secondary-background);
+}
+
+#tertiary-background {
+    background-color: var(--tertiary-background);
+}
+
+footer {
+    text-align: right;
+    margin-top: 100px
 }
