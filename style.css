@@ -88,28 +88,28 @@ code {
 }
 
 .fontbox {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 10px auto;
     text-align: center;
     max-width: 1200px;
 }
 
 .font-sub-box {
-    display: inline-block;
+    display: block;
+    flex-grow: 1;
     width: 500px;
     height: 300px;
     text-align: left;
-    border: 5px solid black;
+    border: 5px double black;
     margin: 10px;
 }
 
-.invisible {
-    opacity: 0;
-}
-
-#demo-code code {
-    position: relative;
-    bottom: 75px;
+.underlined {
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
 }
 
 #font-1, #font-1 p, #font-1 h4 {
