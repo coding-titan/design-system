@@ -23,11 +23,13 @@ nav {
     padding: 10px;
     background-color: var(--background-color);
     border-bottom: 10px solid var(--secondary-background);
+    position: sticky;
+    top: 0px;
 }
 
 h1 {
     font-size: 68px;
-    margin: 28px;
+    margin: 6px;
 }
 
 h2 {
@@ -39,14 +41,12 @@ h3 {
     font-size: 26px;
     margin: 6px;
     padding: 16px;
-    opacity: 0.8;
 }
 
 h4 {
     font-size: 16px;
     font-family: Lato, Arial, sans-serif;
-    padding: 16px;
-    opacity: 0.8;
+    padding: 26px;
 }
 
 p {
@@ -64,13 +64,14 @@ pre {
 code {
     font-family: 'Fira Code', monospace;
     font-size: 16px;
-    text-align: left !important;
+    text-align: left;
     display: block;
     background-color: black;
     color: greenyellow;
     padding: 20px;
     overflow: auto;
     margin: 10px;
+    z-index: -1;
 }
 
 #colors {
@@ -87,8 +88,6 @@ code {
 }
 
 .fontbox {
-    border: 6px solid var(--tertiary-background);
-    border-radius: 10px;
     display: block;
     margin: 10px auto;
     text-align: center;
@@ -97,25 +96,39 @@ code {
 
 .font-sub-box {
     display: inline-block;
-    max-width: 500px;
+    width: 500px;
+    height: 300px;
     text-align: left;
+    border: 5px solid black;
+    margin: 10px;
 }
 
 .invisible {
     opacity: 0;
 }
 
-#font-1 {
-    font-family: Lato;
-    text-align: left;
+#demo-code code {
+    position: relative;
+    bottom: 75px;
 }
 
-#font-1 p {
+#font-1, #font-1 p, #font-1 h4 {
     font-family: Lato;
 }
 
-#font-2 {
+#font-2, #font-2 h4 {
     font-family: Merriweather;
+}
+
+#font-3 {
+    font-family: Fira Code;
+}
+
+#font-3 h4, #font-3 p {
+    font-family: Fira Code;
+    font-size: 15px;
+    position: relative;
+    bottom: 11px;
 }
 
 #background {
