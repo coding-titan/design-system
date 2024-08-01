@@ -32,9 +32,7 @@ h1 {
 
 h2 {
     font-size: 42px;
-    margin: 20px;
     padding: 20px;
-    text-align: center;
 }
 
 h3 {
@@ -47,8 +45,8 @@ h3 {
 h4 {
     font-size: 16px;
     font-family: Lato, Arial, sans-serif;
-    opacity: 0.8;
     padding: 16px;
+    opacity: 0.8;
 }
 
 p {
@@ -72,6 +70,7 @@ code {
     color: greenyellow;
     padding: 20px;
     overflow: auto;
+    margin: 10px;
 }
 
 #colors {
@@ -99,6 +98,24 @@ code {
 .font-sub-box {
     display: inline-block;
     max-width: 500px;
+    text-align: left;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+#font-1 {
+    font-family: Lato;
+    text-align: left;
+}
+
+#font-1 p {
+    font-family: Lato;
+}
+
+#font-2 {
+    font-family: Merriweather;
 }
 
 #background {
@@ -120,10 +137,6 @@ code {
 
 #tertiary-background {
     background-color: var(--tertiary-background);
-}
-
-.invisible {
-    opacity: 0;
 }
 
 footer {
