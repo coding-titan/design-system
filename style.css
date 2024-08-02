@@ -1,10 +1,10 @@
 :root {
     --site-background-color: #FFF7E8;
     --background-color: #FDF0D5;
-    --bright-contrast: #C1121F;
+    --bright-contrast: #c1121ea2;
     --dark-contrast: #780000;
-    --secondary-background: #003049;
-    --tertiary-background: #669BBC;
+    --secondary-background: #002f49;
+    --tertiary-background: #669bbc5f;
 }
 
 * {
@@ -25,6 +25,7 @@ nav {
     border-bottom: 10px solid var(--secondary-background);
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 h1 {
@@ -35,11 +36,12 @@ h1 {
 h2 {
     font-size: 42px;
     padding: 20px;
+    background-color: var(--tertiary-background);
+    border-top: 5px solid black;
 }
 
 h3 {
     font-size: 26px;
-    margin: 6px;
     padding: 16px;
 }
 
@@ -49,17 +51,17 @@ h4 {
     padding: 26px;
 }
 
-p, li {
+p, li, ul {
     font-family: Merriweather, serif;
     font-size: 16px;
     margin: 6px;
     padding: 16px;
     line-height: 26px;
-    list-style-type: circle;
 }
 
 pre {
     white-space: pre-wrap;
+    z-index: -1;
 }
 
 code {
@@ -110,6 +112,7 @@ code {
 
 .font-style-box ul {
     list-style-type: circle;
+    list-style-position: inside;
 }
 
 .underlined {
@@ -117,16 +120,22 @@ code {
     border-top: 5px solid black;
 }
 
-#font-1, #font-1 p, #font-1 h4 {
+#font-1, #font-1 p, #font-1 h4, #font-1 h2 {
     font-family: Lato;
+    border-top: none;
+    background-color: var(--site-background-color);
 }
 
-#font-2, #font-2 h4 {
+#font-2, #font-2 h4, #font-2 h2 {
     font-family: Merriweather;
+    background-color: var(--site-background-color);
+    border-top: none;
 }
 
-#font-3 {
+#font-3, #font-3 h2 {
     font-family: Fira Code;
+    background-color: var(--site-background-color);
+    border-top: none;
 }
 
 #font-3 h4, #font-3 p {
@@ -134,7 +143,6 @@ code {
     font-size: 15px;
     position: relative;
     bottom: 11px;
-    z-index: -1;
 }
 
 #text-styles {
