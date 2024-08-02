@@ -200,6 +200,21 @@ a:active {
     max-width: 350px;
 }
 
+#style-rules h3 {
+    text-align: center;
+}
+
+#style-rules .font-sub-box {
+    display:flex;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#style-rules .font-sub-box li {
+    padding: 6px;
+}
+
 #first-header {
     border-top: none;
 }
