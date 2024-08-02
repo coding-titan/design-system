@@ -49,12 +49,13 @@ h4 {
     padding: 26px;
 }
 
-p {
+p, li {
     font-family: Merriweather, serif;
     font-size: 16px;
     margin: 6px;
     padding: 16px;
     line-height: 26px;
+    list-style-type: circle;
 }
 
 pre {
@@ -107,6 +108,10 @@ code {
     margin: 10px;
 }
 
+.font-style-box ul {
+    list-style-type: circle;
+}
+
 .underlined {
     border-bottom: 5px solid black;
     border-top: 5px solid black;
@@ -129,6 +134,11 @@ code {
     font-size: 15px;
     position: relative;
     bottom: 11px;
+    z-index: -1;
+}
+
+#text-styles {
+    text-align: center;
 }
 
 #background {
